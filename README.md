@@ -143,13 +143,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | Bengali | বাংলা | bn |
 | Gujarati | ગુજરાતી | gu |
 
-## 📧 Contact
-
-Project Maintainer - [@yourusername](https://github.com/yourusername)
-
-Project Link: [https://github.com/yourusername/multilingual-ai-learning-agent](https://github.com/yourusername/multilingual-ai-learning-agent)
-
----
 
 <div align="center">
 
