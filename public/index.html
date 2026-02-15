@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingual AI Learning Agent</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎓 AI Learning Agent</h1>
+      <p>Learn anything in your language with anime-style video explanations</p>
+    </header>
+
+    <main>
+      <div class="input-section">
+        <label for="topic">What would you like to learn?</label>
+        <textarea 
+          id="topic" 
+          placeholder="e.g., Explain Newton's Laws of Motion"
+          rows="4"
+        ></textarea>
+
+        <div class="options">
+          <div class="option-group">
+            <label for="difficulty">Difficulty Level:</label>
+            <select id="difficulty">
+              <option value="beginner">Beginner - Simple explanations</option>
+              <option value="exam">Exam Ready - Structured for tests</option>
+              <option value="deep">Deep Concept - Advanced theory</option>
+            </select>
+          </div>
+
+          <div class="option-group">
+            <label for="outputLanguage">Output Language:</label>
+            <select id="outputLanguage">
+              <option value="">Auto-detect</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="generateBtn" class="primary-btn">Generate Explanation</button>
+      </div>
+
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Creating your personalized explanation...</p>
+      </div>
+
+      <div id="results" class="results hidden">
+        <div class="tabs">
+          <button class="tab active" data-tab="explanation">Explanation</button>
+          <button class="tab" data-tab="script">Video Script</button>
+        </div>
+
+        <div id="explanation-tab" class="tab-content active">
+          <h2>Explanation</h2>
+          <div id="explanation-content"></div>
+        </div>
+
+        <div id="script-tab" class="tab-content">
+          <h2>Video Script</h2>
+          <div id="script-content"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
